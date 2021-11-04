@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&family=Roboto:wght@300;400&family=Source+Sans+Pro:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --bg-color: #263137;
+}
+html{
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: rgb(235, 235, 235);
+  background-color: var(--bg-color);
+}
+.container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: flex-end;
+  position: sticky;
+  top: 0;
+}
+.navSection {
+  margin-top: 20px;
+  position: relative;
+}
+.logo {
+  height: 100%;
+}
+.navItem {
+  display: inline-block;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.3s;
+  font-size: 20px;
+}
+.alink{
+    text-decoration: none;
+    padding: 10px 20px;
+
+    color: rgb(235, 235, 235); 
+    display: inline-block;
+}
+.navItem:hover {
+  opacity: 0.9;
+}
+.navItem:first-child {
+  border-radius: 4px 0 0 4px;
+}
+.navItem:last-child {
+  border-radius: 0 4px 4px 0;
+}
+.slider {
+  height: 4px;
+  background-color: #ec6ead;
+  border-radius: 5px;
+  transition: all 0.4s ease-in-out;
+}
+.home,.about,.services,.contact{
+    height: 100vh;
+}
+.home{
+  background-color: var(--bg-color);
+}
+.about{
+  background-color: #D3959B;
+}
+.services{
+  background-color: #BFE6BA;
+}
+.contact{
+  background-color: #654ea3;
+}
